@@ -22,3 +22,11 @@ class Division(Operation):
             raise ZeroDivisionError
         return first_number / second_number
 
+# Main program loop
+def run_calculator():
+    while True:
+        print("\nChoose operation:")
+        print("1. Addition")
+        print("2. Subtraction")
+        print("3. Multiplication")
+        print("4. Division")
