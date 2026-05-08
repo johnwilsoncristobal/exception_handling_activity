@@ -7,3 +7,7 @@ class Operation:
 class Addition(Operation):
     def calculate(self, first_number, second_number):
         return first_number + second_number
+
+class Subtraction(Operation):
+    def calculate(self, first_number, second_number):
+        return first_number - second_number
