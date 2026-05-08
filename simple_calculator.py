@@ -30,3 +30,15 @@ def run_calculator():
         print("2. Subtraction")
         print("3. Multiplication")
         print("4. Division")
+        
+        try:
+            choice = int(input("Enter choice (1-4): "))
+            first_number = float(input("Enter first number: "))
+            second_number = float(input("Enter second number: "))
+
+            operations = {
+                1: Addition(),
+                2: Subtraction(),
+                3: Multiplication(),
+                4: Division()
+            }
