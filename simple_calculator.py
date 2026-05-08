@@ -11,3 +11,7 @@ class Addition(Operation):
 class Subtraction(Operation):
     def calculate(self, first_number, second_number):
         return first_number - second_number
+        
+class Multiplication(Operation):
+    def calculate(self, first_number, second_number):
+        return first_number * second_number
