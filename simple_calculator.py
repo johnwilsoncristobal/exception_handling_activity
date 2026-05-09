@@ -42,3 +42,20 @@ def run_calculator():
                 3: Multiplication(),
                 4: Division()
             }
+            
+            if choice in operations:
+                result = operations[choice].calculate(first_number, second_number)
+                print("Result:", result)
+            else:
+                print("Invalid choice")
+
+        except ValueError:
+            print("Error: Please enter valid numbers")
+        except ZeroDivisionError as error:
+            print("Error:", error)
+
+        try_again = input("Do you want to try again? (y/n): ")
+        if try_again.lower() != "y":
+            print("Thank you!")
+            break
+
