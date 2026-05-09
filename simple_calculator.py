@@ -18,7 +18,7 @@ class Multiplication(Operation):
         
 class Division(Operation):
     def calculate(self, first_number, second_number):
-        if second_number = 0:
+        if second_number == 0:
             raise ZeroDivisionError
         return first_number / second_number
 
@@ -58,4 +58,3 @@ def run_calculator():
         if try_again.lower() != "y":
             print("Thank you!")
             break
-
