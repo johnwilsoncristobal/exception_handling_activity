@@ -58,3 +58,6 @@ def run_calculator():
         if try_again.lower() != "y":
             print("Thank you!")
             break
+
+# Run the calculator
+run_calculator()
